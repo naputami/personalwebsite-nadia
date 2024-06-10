@@ -1,13 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./style/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world! from css tailwind
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bfeb2b2a30.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nadia Puji Utami</title>
+  </head>
+  <body class="bg-primary-200">
+    <header class="h-screen">
+      <nav
+        id="navbar"
+        class="shadow-lg backdrop-blur-xl bg-primary-50/70 flex gap-x-9 gap-y-5 flex-wrap justify-center p-2 sm:p-4 fixed top-0 sm:top-2 sm:left-[50%] sm:translate-x-[-50%] sm:w-[500px] md:w-[700px] sm:rounded-full"
+      >
+        <a href="#hero">
+          <p
+            class="cursor-pointer py-1 px-2 rounded-full hover:bg-secondary-500 hover:text-primary-50"
+          >
+            Home
+          </p>
+        </a>
+        <a href="#about-me">
+          <p
+            class="cursor-pointer py-1 px-2 rounded-full hover:bg-secondary-500 hover:text-primary-50"
+          >
+            About me
+          </p>
+        </a>
+        <a href="#experience">
+          <p
+            class="cursor-pointer py-1 px-2 rounded-full hover:bg-secondary-500 hover:text-primary-50"
+          >
+            Experience
+          </p>
+        </a>
+        <a href="#projects">
+          <p
+            class="cursor-pointer py-1 px-2 rounded-full hover:bg-secondary-500 hover:text-primary-50"
+          >
+            Projects
+          </p>
+        </a>
+        <a href="#contact">
+          <p
+            class="cursor-pointer py-1 px-2 rounded-full hover:bg-secondary-500 hover:text-primary-50"
+          >
+            Contact Me
+          </p>
+        </a>
+      </nav>
+      <section
+        id="hero"
+        class="pt-36 sm:pt-60 flex flex-col sm:flex-row sm:gap-x-8 sm:justify-center items-center sm:items-start"
+      >
+        <img
+          id="avatar"
+          src="<%= require('./public/profpic.png') %>"
+          class="w-[150px] sm:w-[300px] rounded-full h-fit"
+        />
+        <div class="flex flex-col items-center sm:gap-y-6 gap-y-4">
+          <div class="space-y-1 text-center">
+            <p class="sm:text-lg font-semibold">Hello, I'm</p>
+            <h1 class="text-primary-900 text-3xl sm:text-5xl font-extrabold">
+              Nadia Puji Utami
+            </h1>
+            <div>
+              <span
+                class="text-primary-700 text-xl sm:text-3xl font-bold"
+                id="profile"
+              ></span>
+            </div>
+          </div>
+          <div class="space-x-4">
+            <button
+              class="bg-transparent border-4 border-primary-900 rounded-full p-4 text-primary-900 hover:scale-110 ease-out duration-300"
+            >
+              Download CV
+            </button>
+            <button
+              class="bg-primary-900 border-4 border-primary-900 text-primary-50 rounded-full p-4 hover:scale-110 ease-out duration-300"
+            >
+              Contact Me
+            </button>
+          </div>
+          <div class="space-x-2 sm:space-x-4">
+            <a
+              href="https://github.com/naputami"
+              target="_blank"
+              class="text-4xl sm:text-5xl text-primary-900"
+            >
+              <i
+                class="fa-brands fa-github hover:translate-y-2 ease-in duration-300"
+              ></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nadiapujiutami/"
+              target="_blank"
+              class="text-4xl sm:text-5xl text-primary-900"
+              ><i
+                class="fa-brands fa-linkedin hover:translate-y-2 ease-in duration-300"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section
+        class="flex flex-col items-center mb-10 scroll-mt-52"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        id="about-me"
+      >
+        <div class="text-center mb-4 sm:mb-5">
+          <p class="text-base sm:text-lg font-semibold">Get to know more</p>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-primary-900">
+            About me
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 sm:p-10 sm:w-[80%]"
+        >
+          <div
+            class="border-2 border-primary-900 p-2 sm:p-4 rounded-2xl bg-primary-100"
+          >
+            <div class="text-center">
+              <i class="fa-solid fa-chalkboard-user text-xl"></i>
+              <p class="font-bold text-xl mb-2">Biology Teacher</p>
+            </div>
+
+            <p>
+              I've been teaching biology subject for junior and senior high
+              school students since i'm in university
+            </p>
+          </div>
+          <div
+            class="border-2 border-primary-900 p-2 sm:p-4 rounded-2xl bg-primary-100"
+          >
+            <div class="text-center">
+              <i class="fa-solid fa-computer text-xl"></i>
+              <p class="font-bold text-xl mb-2">Full Stack Developer Trainee</p>
+            </div>
+            <p>
+              I am currently working as Full Stack Developer Trainee at PT
+              Padepokan Tujuh Sembilan, an outsourcing company in Bandung.
+            </p>
+          </div>
+          <div
+            class="border-2 border-primary-900 p-2 sm:p-4 rounded-2xl bg-primary-100 sm:col-span-2 sm:justify-self-center"
+          >
+            <div class="text-center">
+              <i class="fa-solid fa-cat text-xl"></i>
+              <p class="text-center font-bold text-xl mb-2">Cat Person</p>
+            </div>
+
+            <p>
+              I talk to and play with cats in my free time. My twitter bookmark
+              is full of cats photos and videos
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col items-center mb-10 scroll-mt-52"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        id="projects"
+      >
+        <div class="text-center mb-4 sm:mb-5">
+          <p class="text-base sm:text-lg font-semibold">Browse my recent</p>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-primary-900">
+            Project
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 p-4 gap-4 sm:gap-10">
+          <div
+            class="border-2 border-primary-900 p-2 sm:p-4 rounded-2xl bg-primary-100 flex flex-col items-center gap-y-2"
+          >
+            <img
+              src="<%= require('./public/todo.png') %>"
+              class="w-[250px] sm:w-[300px]"
+            />
+            <p class="text-xl sm:text-2xl text-primary-900 font-bold">
+              Project One
+            </p>
+            <div class="flex gap-x-4">
+              <a href="">
+                <button
+                  class="sm:text-lg border-2 border-primary-900 text-primary-900 p-2 w-[100px] rounded-full hover:bg-primary-900 hover:text-primary-50"
+                >
+                  Github
+                </button>
+              </a>
+              <a href="">
+                <button
+                  class="sm:text-lg border-2 border-primary-900 text-primary-900 p-2 w-[100px] rounded-full hover:bg-primary-900 hover:text-primary-50"
+                >
+                  Demo
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="border-2 border-primary-900 p-2 sm:p-4 rounded-2xl bg-primary-100 flex flex-col items-center gap-y-2"
+          >
+            <img
+              src="<%= require('./public/socmed.png') %>"
+              class="w-[250px] sm:w-[300px]"
+            />
+            <p class="text-xl sm:text-2xl text-primary-900 font-bold">
+              Project Two
+            </p>
+            <div class="flex gap-x-4">
+              <a href="">
+                <button
+                  class="sm:text-lg border-2 border-primary-900 text-primary-900 p-2 w-[100px] rounded-full hover:bg-primary-900 hover:text-primary-50"
+                >
+                  Github
+                </button>
+              </a>
+              <a href="">
+                <button
+                  class="sm:text-lg border-2 border-primary-900 text-primary-900 p-2 w-[100px] rounded-full hover:bg-primary-900 hover:text-primary-50"
+                >
+                  Demo
+                </button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="border-2 border-primary-900 p-2 sm:p-4 rounded-2xl bg-primary-100 flex flex-col items-center gap-y-2"
+          >
+            <img
+              src="<%= require('./public/order.png') %>"
+              class="w-[250px] sm:w-[300px]"
+            />
+            <p class="text-xl sm:text-2xl text-primary-900 font-bold">
+              Project Three
+            </p>
+            <div class="flex gap-x-4">
+              <a href="">
+                <button
+                  class="sm:text-lg border-2 border-primary-900 text-primary-900 p-2 w-[100px] rounded-full hover:bg-primary-900 hover:text-primary-50"
+                >
+                  Github
+                </button>
+              </a>
+              <a href="">
+                <button
+                  class="sm:text-lg border-2 border-primary-900 text-primary-900 p-2 w-[100px] rounded-full hover:bg-primary-900 hover:text-primary-50"
+                >
+                  Demo
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col items-center gap-2 p-4 mb-10 scroll-mt-32"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        id="contact"
+      >
+        <div class="text-center mb-4 sm:mb-5">
+          <p class="text-base sm:text-lg font-semibold">Get in touch</p>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-primary-900">
+            Contact Me
+          </h2>
+        </div>
+        <div class="text-center mb-4">
+          <p>Let's talk about your project and how can i help you</p>
+          <p>
+            You can send me e-mail to nadiapujiutami@gmail.com or message me on
+            LinkedIn
+          </p>
+        </div>
+        <div class="space-x-4">
+          <button
+            class="p-4 w-[150px] bg-transparent text-primary-900 border-2 border-primary-900 rounded-full hover:bg-primary-900 hover:text-primary-50"
+          >
+            <i class="fa-solid fa-envelope"></i>&nbspEmail
+          </button>
+          <button
+            class="p-4 w-[150px] bg-transparent text-primary-900 border-2 border-primary-900 rounded-full hover:bg-primary-900 hover:text-primary-50"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>&nbspLinkedIn
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center p-8 w-full">
+      <p>&copy; <span id="currentYear"></span> | Nadia Puji Utami</p>
+    </footer>
+  </body>
 </html>
