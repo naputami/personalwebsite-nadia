@@ -446,10 +446,6 @@ video {
   display: none;
 }
 
-html.js :where([class*="taos:"]:not(.taos-init)) {
-  visibility: hidden;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -578,6 +574,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-bottom: 1rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -619,8 +619,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   scroll-margin-top: 8rem;
 }
 
-.scroll-mt-52 {
-  scroll-margin-top: 13rem;
+.scroll-mt-48 {
+  scroll-margin-top: 12rem;
 }
 
 .grid-cols-1 {
@@ -820,14 +820,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.\!delay-\[0ms\] {
-  transition-delay: 0ms !important;
-}
-
-.\!duration-\[0ms\] {
-  transition-duration: 0ms !important;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -873,10 +865,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 @media (min-width: 640px) {
   .sm\:left-\[50\%\] {
     left: 50%;
-  }
-
-  .sm\:top-4 {
-    top: 1rem;
   }
 
   .sm\:top-2 {
